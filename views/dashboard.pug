@@ -4,22 +4,23 @@ html
     title MedNet
   body
     form(method='get' action='/addpatient')
-      label Registration No :
-      input(type='text' name='patient-name')
+          
+      label Patient Name :
+      input(type='text' name='patient_name')
       
-      label Hospital Name :
-      input(type='text' name='patient-name')
+      label Patient Address :
+      input(type='text' name='patient_addr')
       
-      label Hospital Address :
-      input(type='text' name='patient-addr')
+      label DOB :
+      input(type='date' name='patient_dob')
       
-      label Contact :
-      input(type='number' name='patient-=contact')
-      
-      label Email :
-      input(type='email' name='patient-email')
-      
+      label Gender :
+      select
+        option(value='select') Select
+        option(value='male') Male
+        option(value='female') Female
+        option(value='other') Other  
       label Password :
-      input(type='password' name='patient-pass')
+      input(type='password' name='patient_pass')
      
       input(type='submit')
