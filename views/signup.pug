@@ -1,13 +1,25 @@
 doctype html
 html
-	head
-		title MedNet
-	body	
-		form(method='get' action='/signup')
-					input(type='number' name='hospital-reg-no')
-					input(type='text' name='hospital-name')
-					input(type='text' name='hospital-addr')
-					input(type='email' name='hospital-email')
-					input(type='password' name='hospital-pass')
-					input(type='number' name='hospital-number')
-					input(type='submit')
+  head
+    title MedNet
+  body
+    form(method='get' action='/signup')
+      label Registration No :
+      input(type='number' name='hospital-reg-no')
+      
+      label Hospital Name :
+      input(type='text' name='hospital-name')
+      
+      label Hospital Address :
+      input(type='text' name='hospital-addr')
+      
+      label Contact :
+      input(type='number' name='hospital-=contact')
+      
+      label Email :
+      input(type='email' name='hospital-email')
+      
+      label Password :
+      input(type='password' name='hospital-pass')
+     
+      input(type='submit')
