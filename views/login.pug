@@ -2,12 +2,14 @@ doctype html
 html
   head
     title MedNet
+    link(rel='stylesheet', href='assets/style.css', type='text/css')
   body
-    form(method='get' action='/')
-      label Email :
-      input(type='email' name='hospital_email')
+ 	div(class='form-div')
+	    form(method='get' action='/')
+	      label Email :
+	      input(type='email' placeholder='Email' name='hospital_email')
 
-      label Password :
-      input(type='password' name='hospital_pass')
+	      label Password :
+	      input(type='password' placeholder='Password' name='hospital_pass')
 
-      input(type='submit')
+	      input(type='submit')

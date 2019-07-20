@@ -1,0 +1,19 @@
+html
+  head
+    title MedNet
+    link(rel='stylesheet', href='assets/style.css', type='text/css')
+  body
+    div(class='form-div')
+      form(method='get' action='/addstaff')
+
+        label Staff Name:
+        input(type='text' placeholder='Name' name='staff_name') 
+            
+        label Staff Address:
+        input(type='text' placeholder='Address' name='staff_address')  
+        
+        label Email :
+        input(type='email' placeholder='Email' name='staff_email') 
+
+        label Password :
+        input(type='password' placeholder='Password' name='staff_password')
