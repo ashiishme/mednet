@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title MedNet
+  body
+    form(method='get' action='/addpatient')
+          
+      label Patient Name :
+      input(type='text' name='patient_name')
+      
+      label Patient Address :
+      input(type='text' name='patient_addr')
+      
+      label DOB :
+      input(type='date' name='patient_dob')
+      
+      label Gender :
+      select
+        option(value='select') Select
+        option(value='male') Male
+        option(value='female') Female
+        option(value='other') Other  
+      label Password :
+      input(type='password' name='patient_pass')
+     
+      input(type='submit')
