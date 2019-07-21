@@ -1,14 +1,31 @@
+//- doctype html
+//- html
+//- 	head
+//- 		title MedNet
+//- 		link(rel='stylesheet', href='/style.css')
+//- 	body
+//- 		div(class='bgimg')
+//- 			div(class='topleft')
+//- 				p Logo
+//- 			div(class='middle')	
+//- 				h1 MEDNET
+//- 				hr
+//- 				a(href='/login') 
+//- 				button(class='btn-login') Login
+//- 				a(href='/signup')
+//- 					button(class='btn-signup') Sign Up	
 doctype html
 html
 	head
 		title MedNet
 		link(rel='stylesheet', href='/style.css')
-	body(class="login-bg")
-
-		a(href='/login') 
-			button(class='btn-login') Login
-
-		a(href='/signup')
-			button(class='btn-signup') Sign Up	
-
-
+	body
+		div(class='bgimg')
+			div(class='overlay')
+			div(class='middle')
+				h1 MEDNET
+				div(class='btns')
+					a(href='/login') 
+						button(class='btn-login') Login
+					a(href='/signup')
+							button(class='btn-signup') Sign Up	
