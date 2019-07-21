@@ -35,6 +35,12 @@
       "email": "sdas@asdas.com",
       "password": "sadasdasd",
       "number": "231231"
+    },
+    {
+      "id": "321",
+      "reg": "321",
+      "name": "Grande",
+      "address": "Ktm"
     }
   ]
 }

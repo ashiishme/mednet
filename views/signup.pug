@@ -1,27 +1,28 @@
 doctype html
 html
-  head
-    title MedNet
-    link(rel='stylesheet', href='/style.css')
-  body
-    div(class='form-div')
-      form(method='get' action='/add-hospital')
-        label Registration No :
-        input(type='number' placeholder='Reg No.' name='hospital_reg_no')
-        
-        label Hospital Name :
-        input(type='text' placeholder='Name' name='hospital_name')
-        
-        label Hospital Address :
-        input(type='text' placeholder='Address' name='hospital_addr')
-        
-        label Contact :
-        input(type='number' placeholder='Contact' name='hospital_contact')
-        
-        label Email :
-        input(type='email' placeholder='Email' name='user_email')
-        
-        label Password :
-        input(type='password' placeholder='Password' name='user_pass')
-       
-        input(type='submit')
+	head
+		title MedNet
+		link(rel='stylesheet', href='/style.css')
+	body
+		div(class='form-div')
+			h1 sign up
+			form(method='post' action='/add-hospital')
+				label Registration No :
+				input(type='number' placeholder='Reg No.' name='hospital_reg_no')
+
+				label Hospital Name :
+				input(type='text' placeholder='Name' name='hospital_name')
+
+				label Hospital Address :
+				input(type='text' placeholder='Address' name='hospital_addr')
+
+				label Contact :
+				input(type='number' placeholder='Contact' name='hospital_contact')
+
+				label Email :
+				input(type='email' placeholder='Email' name='user_email')
+
+				label Password :
+				input(type='password' placeholder='Password' name='user_pass')
+
+				input(type='submit' value='Sign up')
