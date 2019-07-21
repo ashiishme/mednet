@@ -8,13 +8,13 @@ Make sure you have Node.js installed.
 
 ```
 
-git clone https://github.com/ashiishme/mednet.git # or clone your own fork
+> git clone https://github.com/ashiishme/mednet.git # or clone your own fork
 
-cd mednet
+> cd mednet
 
-npm install
+> npm install
 
-node app
+> node app
 
 ```
 
