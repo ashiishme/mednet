@@ -1,3 +1,14 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%
+}
 
 input[type=submit]:hover {
   background-color: #45a049;
@@ -15,16 +26,21 @@ input[type=submit] {
 }
 
 input, select {
-  width: 100%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .form-div {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -36,16 +52,78 @@ input, select {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
 }
+
+.btn-login, .btn-signup{
+  width: 30%;
+}
+
+
 
 .btn-login, .btn-add-staff{
 
-  background-color: #4CAF50;
+  background-color: #319219;
 }
 
 .btn-signup, .btn-add-doctor{
   margin-left:1rem;
-  background-color: #3396FF;
+  background-color: #316CFE;
 }
+
+.bgimg {
+  background: url('lbg.jpg') no-repeat fixed ;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0c0808;
+    opacity: .6;
+}
+
+.bgimg {
+  /* Background image */
+  background-image: url('/lbg.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-size: 25px;
+}
+
+
+/* Position text in the middle */
+.middle {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.25rem;
+  letter-spacing: 0.5rem;
+}
+
+.btns a button{
+  margin-top:5%;
+  letter-spacing: 0.1rem;
+}
+
+
