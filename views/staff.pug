@@ -4,7 +4,7 @@ html
     link(rel='stylesheet', href='/style.css')
   body
     div(class='form-div')
-      form(method='get' action='/add-staff')
+      form(method='post' action='/u/add-staff')
 
         label Staff Name:
         input(type='text' placeholder='Name' name='staff_name') 
@@ -17,3 +17,5 @@ html
 
         label Password :
         input(type='password' placeholder='Password' name='staff_password')
+
+        input(type='submit' value='submit')

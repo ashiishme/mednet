@@ -14,7 +14,7 @@ class Staff {
 		});
 	}
 
-	getSingleDoctor(id) {
+	getSingleStaff(id) {
 		if(id != '') {
 			this.fs.readFile('./database/staffs.json', 'utf8', (err, data) => {
 				if(err) throw err;
@@ -33,21 +33,26 @@ class Staff {
 		}
 	}
 
-	addDoctor() {
-		let object = {staffs: []};
-		this.fs.readFile('./database/staffs.json', 'utf8', (err, data) => {
+	addStaff() {
+		let object = {users: []};
+		this.fs.readFile('./database/users.json', 'utf8', (err, data) => {
 			if(err) throw err;
+			let _id;
 			if(data) {
 				object = JSON.parse(data);
+				let len = Object.keys(object.user).length;
+				_id = object.user[len - 1].id + 1;
 			}
-			object.staffs.push({
-				id: this.req.body.staff_id,
+			object.user.push({
+				id: _id,
 				name: this.req.body.staff_name,
+				address: this.req.body.staff_address,
 				email: this.req.body.staff_email,
-				password: this.req.body.staff_password
+				password: this.req.body.staff_password,
+				type: "staff"
 			});
 			let string = JSON.stringify(object, null, 2);
-			this.fs.writeFile('./database/staffs.json', string, 'utf8', (err) => {
+			this.fs.writeFile('./database/users.json', string, 'utf8', (err) => {
 			if(err) throw err;
 			this.res.json('success');
 			});

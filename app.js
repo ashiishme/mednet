@@ -6,7 +6,9 @@ bodyparser = require('body-parser');
 let hospital = require('./controllers/Hospital'),
 staff = require('./controllers/Staff'),
 doctor = require('./controllers/Doctor'),
-login = require('./controllers/Login');
+login = require('./controllers/Login'),
+patient = require('./controllers/Patient');
+
 app = express();
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
@@ -29,13 +31,19 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-	 
+	 new login(req, res, fs).login();
 });
 
 // signup
 
 app.get('/signup', (req, res) => {
 	res.status(200).render('signup');
+});
+
+// admin
+
+app.get('/u/admin', (req, res) => {
+	res.status(200).render('admindash');
 });
 
 // Hospital
@@ -52,16 +60,32 @@ app.get('/u/hospital/:id', (req, res) => {
 });
 
 // Doctors
-app.post('/u/doctor/add-doctor', (req, res) => {
+app.get('/u/add-doctor', (req, res) => {
+	res.status(200).render('drdata');
+});
+
+app.post('/u/add-doctor', (req, res) => {
 	new doctor(req, res, fs).addDoctor();
 });
 
-app.get('/u/add-staff', (req, res) => {
-	new staff(req, res).addStaff();
+// Staffs
+
+app.get("/u/staff", (req, res) => {
+	new doctor(req, res, fs).getDoctors();
 });
 
-app.get('/u/add-doctor', (req, res) => {
-	new doctor(req, res).addDoctor();
+app.get('/u/add-staff', (req, res) => {
+	res.status(200).render('staff');
+});
+
+app.post('/u/add-staff', (req, res) => {
+	new staff(req, res, fs).addStaff();
+});
+
+// Patient
+
+app.post('/u/add-patient', (req, res) => {
+	new patient(req, res, fs).addPatient();
 });
 
 app.listen(process.env.PORT || 3000, () => {

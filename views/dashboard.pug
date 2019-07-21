@@ -4,13 +4,16 @@ html
     title MedNet
     link(rel='stylesheet', href='/style.css')
   body
-    form(method='get' action='/add-patient')
-          
+    form(method='post' action='/u/add-patient')
+      
+      label Patient ID (Finger print) :
+      input(type='number' name='patient_finger_print')
+
       label Patient Name :
       input(type='text' name='patient_name')
 
       label Gender :
-      select
+      select(name='patient_gender')
         option(value='select') Select
         option(value='male') Male
         option(value='female') Female
@@ -23,14 +26,22 @@ html
       input(type='date' name='patient_dob') 
       
       label Type of sickness :
-      select
+      select(name='patient_sickness')
         option(value='select') Select
-        option(value='other') Other 
+        option(value='allergies') Allergies
+        option(value='anxiety-disorders') Anxiety disorders 
+        option(value='asthma') Asthma 
+        option(value='blindness-low-vision') Blindness and low vision 
+        option(value='deafness') Deafness 
+        option(value='depression') Depression
+        option(value='diabetes') Diabetes
+        option(value='migraine') Migraine
 
       label Assigned Doctor :
-      select
+      select(name='patient_assigned_doctor')
         option(value='select') Select
-        option(value='other') Other 
+        each doctor in obj
+          option(value=doctor.id) #{doctor.name} 
        
      
       input(type='submit')

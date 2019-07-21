@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/style.css')
   body
     div(class='form-div')
-      form(method='get' action='/adddr')
+      form(method='post' action='/u/add-doctor/')
 
         label NMC no :
         input(type='number' placeholder='NMC no.' name='doctor_nmc') 
@@ -27,3 +27,5 @@ html
 
         label Phone :
         input(type='number' placeholder='Phone' name='doctor_number')
+
+        input(type='submit' value='submit')

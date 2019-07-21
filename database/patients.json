@@ -1,0 +1,13 @@
+{
+  "patients": [
+    {
+      "id": "987654312",
+      "name": "Ashish",
+      "gender": "male",
+      "address": "Butwal",
+      "dob": "1997-12-22",
+      "sickness": "anxiety-disorders",
+      "assigned_doc": "10"
+    }
+  ]
+}

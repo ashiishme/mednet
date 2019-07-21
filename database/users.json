@@ -11,6 +11,72 @@
       "email": "asd@asdc.com",
       "password": "sadasdasd",
       "type": "admin"
+    },
+    {
+      "id": 3,
+      "email": "somethig@asdas.com",
+      "password": "123",
+      "type": "admin"
+    },
+    {
+      "id": 4,
+      "email": "somethig@asdas.com",
+      "password": "sadasdasd",
+      "type": "admin"
+    },
+    {
+      "id": 5,
+      "email": "qwer@wew.com",
+      "password": "sdasdasd",
+      "type": "admin"
+    },
+    {
+      "id": 6,
+      "email": "fghjjhgffghjk@s.sda",
+      "password": "fghjklfghjk",
+      "type": "admin"
+    },
+    {
+      "id": 7,
+      "email": "asd@asdc.com",
+      "password": "sdadsa",
+      "type": "admin"
+    },
+    {
+      "id": 8,
+      "name": "ssadas",
+      "address": "sadasd",
+      "email": "sdasa@asda.com",
+      "password": "asdasdasd",
+      "type": "staff"
+    },
+    {
+      "id": 9,
+      "name": "Staff4",
+      "address": "asdasdk",
+      "email": "awqe@sad.com",
+      "password": "sdasda",
+      "type": "staff"
+    },
+    {
+      "id": 10,
+      "nmc": "67890",
+      "name": "doctor1",
+      "specialist": "fghjkl",
+      "address": "fghjkl",
+      "email": "fghjk@ghj.fghjk",
+      "number": "34567890",
+      "type": "Doctor"
+    },
+    {
+      "id": 11,
+      "nmc": "67890",
+      "name": "doctor2",
+      "specialist": "fghjkl",
+      "address": "fghjkl",
+      "email": "fghjk@ghj.fghjk",
+      "number": "34567890",
+      "type": "Doctor"
     }
   ]
 }

@@ -5,11 +5,11 @@ html
 		link(rel='stylesheet', href='/style.css')
 	body
 		div(class='form-div')
-			form(method='get' action='/')
+			form(method='post' action='/login')
 				label Email :
-				input(type='email' placeholder='Email' name='hospital_email')
+				input(type='email' placeholder='Email' name='email')
 
 				label Password :
-				input(type='password' placeholder='Password' name='hospital_pass')
+				input(type='password' placeholder='Password' name='password')
 
 				input(type='submit')

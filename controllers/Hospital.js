@@ -51,8 +51,7 @@ class Hospital {
 			let string = JSON.stringify(hospitals, null, 2);
 			this.fs.writeFile('./database/hospitals.json', string, 'utf8', (err) => {
 				if(err) throw err;
-				console.log('hos');
-				this.next();
+				this.res.redirect("/u/admin");
 			});
 		});
 		
@@ -73,7 +72,7 @@ class Hospital {
 			let string = JSON.stringify(users, null, 2);
 			this.fs.writeFile('./database/users.json', string, 'utf8', (err) => {
 				if(err) throw err;
-				this.next();
+				this.res.json("success");
 			});
 		});
 	}	

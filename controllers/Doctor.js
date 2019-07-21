@@ -8,9 +8,18 @@ class Doctor {
 	}
 
 	getDoctors() {
-		this.fs.readFile('./database/doctors.json', 'utf8', (err, data) => {
+		this.fs.readFile('./database/users.json', 'utf8', (err, data) => {
 			if(err) throw err;
-			return this.res.json(JSON.parse(data));
+			let user_data = JSON.parse(data);
+			let len = Object.keys(user_data.user).length;
+			let obj = [];
+			for(let i = 0; i < len; i++) {
+				if(user_data.user[i].type === "Doctor") {
+					obj.push(user_data.user[i]);
+				}
+			}
+			console.log(obj);
+			return this.res.status(200).render('dashboard', { obj: obj});
 		});
 	}
 
@@ -34,23 +43,29 @@ class Doctor {
 	}
 
 	addDoctor() {
-		let object = {doctors: []};
-		this.fs.readFile('./database/doctors.json', 'utf8', (err, data) => {
+		let object = {user: []};
+		this.fs.readFile('./database/users.json', 'utf8', (err, data) => {
 			if(err) throw err;
+			let _id;
 			if(data) {
 				object = JSON.parse(data);
+				let len = Object.keys(object.user).length;
+				_id = object.user[len - 1].id + 1;
 			}
-			object.doctors.push({
+			object.user.push({
+				id: _id,
 				nmc: this.req.body.doctor_nmc,
 				name: this.req.body.doctor_name,
 				qualification: this.req.body.doctor_qualification,
 				specialist: this.req.body.doctor_specialist,
 				address: this.req.body.doctor_address,
 				email: this.req.body.doctor_email,
-				number: this.req.body.doctor_number
+				number: this.req.body.doctor_number,
+				type: "Doctor"
 			});
+
 			let string = JSON.stringify(object, null, 2);
-			this.fs.writeFile('./database/doctors.json', string, 'utf8', (err) => {
+			this.fs.writeFile('./database/users.json', string, 'utf8', (err) => {
 			if(err) throw err;
 			this.res.json('success');
 			});
