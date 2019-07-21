@@ -16,20 +16,26 @@ class Patient {
 
 	getSinglePatient() {
 		let id = this.req.body.patient_id;
+		console.log(id);
 		if(id != '') {
 			this.fs.readFile('./database/patients.json', 'utf8', (err, data) => {
 				if(err) throw err;
 				let obj = JSON.parse(data);
 				let len = Object.keys(obj.patients).length;
+				console.log(len);
 				let patient_data = [];
+				console.log("0", obj.patients[0].id);
+				console.log("1", obj.patients[1].id);
 				for(let i = 0; i < len; i++) {
 					if(id == obj.patients[i].id) {
 						patient_data.push(obj.patients[i]);
-					} else {
-						this.res.json('not found');
 					}
 				}
-				this.res.status(200).render('patient-data', { obj: patient_data});
+				if(patient_data) {
+					return this.res.status(200).render('patient-data', { obj: patient_data});
+				} else {
+					return this.res.json('not found');
+				}
 			});
 		}
 	}

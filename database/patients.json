@@ -8,6 +8,15 @@
       "dob": "1997-12-22",
       "sickness": "anxiety-disorders",
       "assigned_doc": "10"
+    },
+    {
+      "id": "999",
+      "name": "Patient 999",
+      "gender": "male",
+      "address": "Patient Addr 999",
+      "dob": "1999-05-11",
+      "sickness": "depression",
+      "assigned_doc": "11"
     }
   ]
 }

@@ -41,6 +41,18 @@
       "reg": "56789",
       "name": "sadasd",
       "address": "ssdasda"
+    },
+    {
+      "id": "123456789",
+      "reg": "123456789",
+      "name": "ABC Hospital",
+      "address": "ABC street"
+    },
+    {
+      "id": "0987654",
+      "reg": "0987654",
+      "name": "BCA Hospital",
+      "address": "BCA Street"
     }
   ]
 }

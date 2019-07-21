@@ -77,6 +77,36 @@
       "email": "fghjk@ghj.fghjk",
       "number": "34567890",
       "type": "Doctor"
+    },
+    {
+      "id": 12,
+      "email": "abc@gmail.com",
+      "password": "ABC123",
+      "type": "admin"
+    },
+    {
+      "id": 13,
+      "email": "bca@gmail.com",
+      "password": "qwerty",
+      "type": "admin"
+    },
+    {
+      "id": 14,
+      "name": "Staff One",
+      "address": "Staff addr",
+      "email": "staff1@gmail.com",
+      "password": "qwerty",
+      "type": "staff"
+    },
+    {
+      "id": 15,
+      "nmc": "888",
+      "name": "Doctor 888",
+      "specialist": "Psychologist",
+      "address": "Doctor street 888",
+      "email": "doctor88@888.com",
+      "number": "88888888",
+      "type": "Doctor"
     }
   ]
 }
