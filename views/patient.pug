@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title MedNet
+		link(rel='stylesheet', href='/style.css')
+	body
+		div(class='form-div')
+			form(method='post' action='/u/patient/data')
+				label Enter Patient ID :
+				input(type='number' placeholder='Identification number' name='patient_id')
+				input(type='submit')

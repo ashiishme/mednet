@@ -18,7 +18,6 @@ class Doctor {
 					obj.push(user_data.user[i]);
 				}
 			}
-			console.log(obj);
 			return this.res.status(200).render('dashboard', { obj: obj});
 		});
 	}

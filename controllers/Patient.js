@@ -14,21 +14,22 @@ class Patient {
 		});
 	}
 
-	getSinglePatient(id) {
+	getSinglePatient() {
+		let id = this.req.body.patient_id;
 		if(id != '') {
 			this.fs.readFile('./database/patients.json', 'utf8', (err, data) => {
 				if(err) throw err;
-
 				let obj = JSON.parse(data);
 				let len = Object.keys(obj.patients).length;
-
+				let patient_data = [];
 				for(let i = 0; i < len; i++) {
 					if(id == obj.patients[i].id) {
-						this.res.json(obj.patients[i].id);
+						patient_data.push(obj.patients[i]);
 					} else {
 						this.res.json('not found');
 					}
 				}
+				this.res.status(200).render('patient-data', { obj: patient_data});
 			});
 		}
 	}
@@ -52,7 +53,7 @@ class Patient {
 				sickness: this.req.body.patient_sickness,
 				assigned_doc: this.req.body.patient_assigned_doctor,
 			});
-			
+
 			let string = JSON.stringify(object, null, 2);
 			this.fs.writeFile('./database/patients.json', string, 'utf8', (err) => {
 			if(err) throw err;

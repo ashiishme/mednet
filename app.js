@@ -88,6 +88,14 @@ app.post('/u/add-patient', (req, res) => {
 	new patient(req, res, fs).addPatient();
 });
 
+app.get('/u/patient/', (req, res) => {
+	res.status(200).render('patient');
+});
+
+app.post('/u/patient/data', (req, res) => {
+	new patient(req, res, fs).getSinglePatient();
+});
+
 app.listen(process.env.PORT || 3000, () => {
 	console.log('Server started');
 });

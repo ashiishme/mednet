@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title MedNet
+		link(rel='stylesheet', href='/style.css')
+	body
+	div(class='form-div')
+		h2 Patient Data :
+		br
+		each patient in obj
+			p Name : #{patient.id}
+			p Gender : #{patient.gender}
+			p Address : #{patient.address}
+			p DOB : #{patient.dob}
+			p Sickness : #{patient.sickness}
+			p Assigned Doctor ID : #{patient.assigned_doc}
