@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title MedNet
+    link(rel='stylesheet', href='/style.css')
+  body
+    div(class='form-div')
+      form(method='get' action='/adddr')
+
+        label NMC no :
+        input(type='number' placeholder='NMC no.' name='doctor_nmc') 
+            
+        label Doctor Name :
+        input(type='text' placeholder='Name' name='doctor_name')  
+        
+        label Qualification :
+        input(type='text' placeholder='Qualification' name='doctor_qualication') 
+
+        label Specialist :
+        input(type='text' placeholder='Specialist' name='doctor_specialist')
+
+        label Address :
+        input(type='text' placeholder='Address' name='doctor_address') 
+
+        label Email :
+        input(type='email' placeholder='Email' name='doctor_email')  
+
+        label Phone :
+        input(type='number' placeholder='Phone' name='doctor_number')

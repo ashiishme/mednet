@@ -1,5 +1,6 @@
 
 const express = require('express'),
+path = require('path'),
 fs = require('fs'),
 bodyparser = require('body-parser');
 let hospital = require('./controllers/Hospital'),
@@ -10,6 +11,9 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 
 app.set('view engine', 'pug');
+app.set('views', 'views');
+
+app.use(express.static(path.join(path.dirname(process.mainModule.filename), '/assets')));
 
 // routes
 
@@ -17,8 +21,20 @@ app.get('/', (req, res) => {
 	res.status(200).render('index');
 });
 
+// login
+
+app.get('/login', (req, res) => {
+	res.status(200).render('login');
+});
+
+// signup
+
+app.get('/signup', (req, res) => {
+	res.status(200).render('signup');
+});
+
 // Hospital
-app.post('/signup', (req, res) => {
+app.post('/add-hospital', (req, res) => {
 	new hospital(req, res, fs).addHospital();
 });
 
