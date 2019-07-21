@@ -1,6 +1,6 @@
 # MedNet
 
-A medical client application developed for Everest Hack 2019.
+A cloud-based platform to digitized health center developed for Everest Hack 2019.
 
 ## Running Locally
 
