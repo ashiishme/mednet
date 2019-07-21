@@ -1,0 +1,40 @@
+{
+  "hospital": [
+    {
+      "id": "12312",
+      "reg": "12312",
+      "name": "sdasda",
+      "address": "asdas",
+      "email": "asdas@adfa.com",
+      "password": "asdasda",
+      "number": "231321"
+    },
+    {
+      "id": "123",
+      "reg": "123",
+      "name": "sdasda",
+      "address": "sadasd",
+      "email": "asdas@adfa.com",
+      "password": "asdasdasd",
+      "number": "12323"
+    },
+    {
+      "id": "989",
+      "reg": "989",
+      "name": "sdaasda",
+      "address": "asdasd",
+      "email": "sad@sasa.cm",
+      "password": "sdasdsdasd",
+      "number": "321312"
+    },
+    {
+      "id": "0000",
+      "reg": "0000",
+      "name": "asihsh",
+      "address": "asdhasd",
+      "email": "sdas@asdas.com",
+      "password": "sadasdasd",
+      "number": "231231"
+    }
+  ]
+}

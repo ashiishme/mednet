@@ -2,11 +2,11 @@ doctype html
 html
 	head
 	body
-		form(method='get' action='/signup')
-			input(type='number' name='hospital-reg-no')
-			input(type='text' name='hospital-name')
-			input(type='text' name='hospital-addr')
-			input(type='email' name='hospital-email')
-			input(type='password' name='hospital-pass')
-			input(type='number' name='hospital-number')
+		form(method='post' action='/signup')
+			input(type='number' name='hospital_reg_no')
+			input(type='text' name='hospital_name')
+			input(type='text' name='hospital_addr')
+			input(type='email' name='hospital_email')
+			input(type='password' name='hospital_pass')
+			input(type='number' name='hospital_number')
 			input(type='submit')
