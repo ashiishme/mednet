@@ -6,6 +6,7 @@ bodyparser = require('body-parser');
 let hospital = require('./controllers/Hospital'),
 staff = require('./controllers/Staff'),
 doctor = require('./controllers/Doctor'),
+login = require('./controllers/Login');
 app = express();
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
@@ -25,6 +26,10 @@ app.get('/', (req, res) => {
 
 app.get('/login', (req, res) => {
 	res.status(200).render('login');
+});
+
+app.post('/login', (req, res) => {
+	 
 });
 
 // signup

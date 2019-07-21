@@ -34,28 +34,48 @@ class Hospital {
 	}
 
 	addHospital() {
-		let object = {hospital: []};
+		let hospitals = {hospital: []};
+		let users = {user: []};
 		this.fs.readFile('./database/hospitals.json', 'utf8', (err, data) => {
 			if(err) throw err;
 			if(data) {
-				object = JSON.parse(data);
+				hospitals = JSON.parse(data);
 			}
-			object.hospital.push({
+			hospitals.hospital.push({
 				id: this.req.body.hospital_reg_no,
 				reg: this.req.body.hospital_reg_no,
 				name: this.req.body.hospital_name,
 				address: this.req.body.hospital_addr,
-				email: this.req.body.hospital_email,
-				password: this.req.body.hospital_pass,
 				number: this.req.body.hospital_number
 			});
-			let string = JSON.stringify(object, null, 2);
+			let string = JSON.stringify(hospitals, null, 2);
 			this.fs.writeFile('./database/hospitals.json', string, 'utf8', (err) => {
-			if(err) throw err;
-			this.res.json('success');
+				if(err) throw err;
+				console.log('hos');
+				this.next();
 			});
 		});
 		
+		this.fs.readFile('./database/users.json', 'utf8', (err, data) => {
+			if(err) throw err;
+			let _id = 1;
+			if(data) {
+				users = JSON.parse(data);
+				let len = Object.keys(users.user).length;
+				_id = users.user[len - 1].id + 1;
+			}
+			users.user.push({
+				id: _id,
+				email: this.req.body.user_email,
+				password: this.req.body.user_pass,
+				type: "admin"
+			});
+			let string = JSON.stringify(users, null, 2);
+			this.fs.writeFile('./database/users.json', string, 'utf8', (err) => {
+				if(err) throw err;
+				this.next();
+			});
+		});
 	}	
 
 }

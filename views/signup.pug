@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/style.css')
   body
     div(class='form-div')
-      form(method='get' action='/add-hospital')
+      form(method='post' action='/add-hospital')
         label Registration No :
         input(type='number' placeholder='Reg No.' name='hospital_reg_no')
         
@@ -19,9 +19,9 @@ html
         input(type='number' placeholder='Contact' name='hospital_contact')
         
         label Email :
-        input(type='email' placeholder='Email' name='hospital_email')
+        input(type='email' placeholder='Email' name='user_email')
         
         label Password :
-        input(type='password' placeholder='Password' name='hospital_pass')
+        input(type='password' placeholder='Password' name='user_pass')
        
         input(type='submit')

@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "asd@asdc.com",
+      "password": "asdasd",
+      "type": "admin"
+    },
+    {
+      "id": 2,
+      "email": "asd@asdc.com",
+      "password": "sadasdasd",
+      "type": "admin"
+    }
+  ]
+}
