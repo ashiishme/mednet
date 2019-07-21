@@ -18,7 +18,7 @@ class Doctor {
 					obj.push(user_data.user[i]);
 				}
 			}
-			return this.res.status(200).render('dashboard', { obj: obj});
+			return this.res.status(200).render('add-patient', { obj: obj});
 		});
 	}
 

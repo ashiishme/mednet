@@ -43,7 +43,7 @@ input, select {
   transform: translate(-50%, -50%);
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px 20px;
   margin: 2rem 0 0.15rem 0;
 }
 
@@ -55,7 +55,7 @@ input, select {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn-login, .btn-signup{
@@ -73,6 +73,10 @@ input[type=submit] {
 .btn-login, .btn-add-staff{
 
   background-color: #319219;
+}
+
+.btn-logout {
+  background: #f44336;
 }
 
 .btn-signup, .btn-add-doctor{
@@ -141,6 +145,10 @@ body{
   letter-spacing: 0.1rem;
 }
 
+form {
+  padding-top: 2rem;
+}
+
 form label{
   font-weight: 600;
 }
@@ -151,3 +159,18 @@ form label{
   color: #4ba54e; 
 }
 
+.back-btn {
+  margin-left: 1rem;
+  color: #FFF;
+  text-decoration: none;
+  background: #333;
+  padding: 0.4rem 1rem;
+}
+
+.h2-title {
+  color: #FFF;
+}
+
+.res-msg {
+  color: #43A047;
+}

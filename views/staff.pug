@@ -4,6 +4,7 @@ html
     link(rel='stylesheet', href='/style.css')
   body
     div(class='form-div')
+      span(class="res-msg") #{success}
       form(method='post' action='/u/add-staff')
 
         label Staff Name:
@@ -19,3 +20,5 @@ html
         input(type='password' placeholder='Password' name='staff_password')
 
         input(type='submit' value='submit')
+    br
+    a(href='/u/admin/' class='back-btn') Go Back

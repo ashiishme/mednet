@@ -71,7 +71,7 @@ app.post('/u/add-doctor', (req, res) => {
 // Staffs
 
 app.get("/u/staff", (req, res) => {
-	new doctor(req, res, fs).getDoctors();
+	res.status(200).render('dashboard');
 });
 
 app.get('/u/add-staff', (req, res) => {
@@ -83,6 +83,10 @@ app.post('/u/add-staff', (req, res) => {
 });
 
 // Patient
+
+app.get('/u/add-patient', (req, res) => {
+	new doctor(req, res, fs).getDoctors();
+});
 
 app.post('/u/add-patient', (req, res) => {
 	new patient(req, res, fs).addPatient();

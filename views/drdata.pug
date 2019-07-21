@@ -4,7 +4,7 @@ html
     title MedNet
     link(rel='stylesheet', href='/style.css')
   body
-    div(class='form-div')
+    div(class='form-div my-2')
       form(method='post' action='/u/add-doctor/')
 
         label NMC no :
@@ -29,3 +29,5 @@ html
         input(type='number' placeholder='Phone' name='doctor_number')
 
         input(type='submit' value='submit')
+    br
+    a(href='/u/admin/' class='back-btn') Go Back

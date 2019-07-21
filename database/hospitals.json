@@ -53,6 +53,24 @@
       "reg": "0987654",
       "name": "BCA Hospital",
       "address": "BCA Street"
+    },
+    {
+      "id": "88218392",
+      "reg": "88218392",
+      "name": "kasdjaskdj",
+      "address": "skdajskdajsdk"
+    },
+    {
+      "id": "543210",
+      "reg": "543210",
+      "name": "XYZ Hospital ",
+      "address": "xyz street"
+    },
+    {
+      "id": "543210",
+      "reg": "543210",
+      "name": "XYZ Hospital ",
+      "address": "xyz street"
     }
   ]
 }

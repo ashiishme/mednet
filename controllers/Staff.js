@@ -54,7 +54,7 @@ class Staff {
 			let string = JSON.stringify(object, null, 2);
 			this.fs.writeFile('./database/users.json', string, 'utf8', (err) => {
 			if(err) throw err;
-			this.res.json('success');
+			return this.res.status(200).render('staff', {success: "Staff added successfully." });
 			});
 		});
 		

@@ -2,60 +2,60 @@
   "user": [
     {
       "id": 1,
-      "email": "asd@asdc.com",
-      "password": "asdasd",
+      "email": "admin1@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 2,
-      "email": "asd@asdc.com",
-      "password": "sadasdasd",
+      "email": "admin2@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 3,
-      "email": "somethig@asdas.com",
-      "password": "123",
+      "email": "admin3@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 4,
-      "email": "somethig@asdas.com",
-      "password": "sadasdasd",
+      "email": "admin4@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 5,
-      "email": "qwer@wew.com",
-      "password": "sdasdasd",
+      "email": "admin5@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 6,
-      "email": "fghjjhgffghjk@s.sda",
-      "password": "fghjklfghjk",
+      "email": "admin6@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 7,
-      "email": "asd@asdc.com",
-      "password": "sdadsa",
+      "email": "admin7@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 8,
-      "name": "ssadas",
-      "address": "sadasd",
-      "email": "sdasa@asda.com",
-      "password": "asdasdasd",
+      "name": "Staff 8",
+      "address": "staff 8 street",
+      "email": "staff8@staff.com",
+      "password": "qwerty",
       "type": "staff"
     },
     {
       "id": 9,
-      "name": "Staff4",
-      "address": "asdasdk",
-      "email": "awqe@sad.com",
-      "password": "sdasda",
+      "name": "Staff 4",
+      "address": "staff 4 street",
+      "email": "staff9@staff.com",
+      "password": "qwerty",
       "type": "staff"
     },
     {
@@ -64,7 +64,7 @@
       "name": "doctor1",
       "specialist": "fghjkl",
       "address": "fghjkl",
-      "email": "fghjk@ghj.fghjk",
+      "email": "doctor10@doctor.com",
       "number": "34567890",
       "type": "Doctor"
     },
@@ -74,19 +74,19 @@
       "name": "doctor2",
       "specialist": "fghjkl",
       "address": "fghjkl",
-      "email": "fghjk@ghj.fghjk",
+      "email": "doctor11@doctor.com",
       "number": "34567890",
       "type": "Doctor"
     },
     {
       "id": 12,
-      "email": "abc@gmail.com",
-      "password": "ABC123",
+      "email": "admin12@admin.com",
+      "password": "qwerty",
       "type": "admin"
     },
     {
       "id": 13,
-      "email": "bca@gmail.com",
+      "email": "admin13@admin.com",
       "password": "qwerty",
       "type": "admin"
     },
@@ -107,6 +107,72 @@
       "email": "doctor88@888.com",
       "number": "88888888",
       "type": "Doctor"
+    },
+    {
+      "id": 16,
+      "email": "admin16@admin.com",
+      "password": "qwerty",
+      "type": "admin"
+    },
+    {
+      "id": 17,
+      "name": "Staff test",
+      "address": "staff test addr",
+      "email": "staff@testmail.com",
+      "password": "qwerty",
+      "type": "staff"
+    },
+    {
+      "id": 18,
+      "name": "test staff ",
+      "address": "test staff addr",
+      "email": "qwerty@staff.com",
+      "password": "qwerty",
+      "type": "staff"
+    },
+    {
+      "id": 19,
+      "name": "asd",
+      "address": "sadas",
+      "email": "sad@asda.com",
+      "password": "qwewewq",
+      "type": "staff"
+    },
+    {
+      "id": 20,
+      "name": "sadasd",
+      "address": "sadasd",
+      "email": "asda@sdas.com",
+      "password": "asdasdsda",
+      "type": "staff"
+    },
+    {
+      "id": 21,
+      "name": "test stafffff",
+      "address": "sajask",
+      "email": "staff@sadsa.com",
+      "password": "ssdasdasd",
+      "type": "staff"
+    },
+    {
+      "id": 22,
+      "email": "xyzhostpital@testmail.com",
+      "password": "qwerty",
+      "type": "admin"
+    },
+    {
+      "id": 23,
+      "email": "xyzhostpital@testmail.com",
+      "password": "qwerty",
+      "type": "admin"
+    },
+    {
+      "id": 24,
+      "name": "Staff test name",
+      "address": "staff test addr",
+      "email": "test.staff@testmail.com",
+      "password": "qwerty",
+      "type": "staff"
     }
   ]
 }
