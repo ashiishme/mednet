@@ -1,6 +1,6 @@
 # MedNet
 
-A cloud-based platform to digitized health center developed for Everest Hack 2019.
+A cloud-based platform to digitize health centers developed for Everest Hack 2019.
 
 ## Running Locally
 
